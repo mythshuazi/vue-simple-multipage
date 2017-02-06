@@ -1,0 +1,2 @@
+hammer 的js文件是 ios 需要的；
+Android不需要

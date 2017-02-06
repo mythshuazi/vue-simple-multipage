@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!DOCTYPE html>
+<html style="height:100%; font-size:12px;">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>商品详情</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no" />
+<script src="../../libs/flexible_css.js,flexible.js"></script>
+<link rel="stylesheet" href="../../public-assets/css/public.css">
+<link rel="stylesheet" href="../../public-assets/css/swiper.3.1.2.min.css">
+<!-- <script src="../../libs/zepto.js"></script>
+<script src="../../libs/iscroll.js"></script> -->
+<script src="../../libs/swiper.3.1.2.min.js"></script>
+<!-- <script src="../../libs/scrollLoading.js"></script> -->
+</head>
+<body style="height:100%; font-size:12px; line-height:1.2; overflow:hidden;">
+	<div id="wrapContainer">
+		<div id="topBar"><i class="back"></i>商品详情<i class="share"></i></div>
+	    <div class="mainContainer" style="height:100%; overflow: hidden;">
+	        <div id="wrap" style="height:200%; overflow:hidden;">
+	            <div id="up" style="height:50%; overflow:hidden;">
+					<div class="mainContent" style="padding-bottom:10px;">
+						<!--组件部分-->
+						<carousel   v-bind:pic-list="picList" v-bind:name="goodsName"></carousel>
+						<goods-type v-bind:case-type="caseType" v-bind:smt-type="smtType" 
+								    v-bind:goods-name="goodsName" 
+									v-bind:ads="ads" 
+									v-bind:price-list="priceList"
+									v-bind:limit-up="limitUp"
+									v-bind:score="score">
+						</goods-type>						
+						<common v-bind:smt-list="smtList"
+								v-bind:case-type="caseType"
+								v-bind:high-limit="highLimit"
+								v-bind:high-tips="highTips"
+								v-bind:vip-msg="vipMsg"
+								v-bind:smt-type="smtType"
+								v-bind:attr-list="attrList" 
+								v-bind:choosed-count="choosedCount" 
+								v-bind:promise="promise" 
+								v-bind:good-percent="goodPercent" 
+								v-bind:shine-list="shineList" 
+								v-bind:assess-count="assessCount">
+						</common>
+						<!-- 
+						<activity></activity>
+						<choose></choose>
+						<promise></promise>
+						<comment></comment>
+						<concat-guess></concat-guess> -->
+						<!--组件部分-->
+					</div>
+	            </div>
+	            <div id="down" style="height:50%; overflow:hidden;">
+	                <section id="detail">
+
+	                </section>
+	            </div>
+	        </div>
+	    </div>
+
+	    <div id="sideBar">
+	    </div>	
+	</div>
+</body>
+</html>

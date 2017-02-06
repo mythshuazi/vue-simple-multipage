@@ -1,0 +1,34 @@
+{
+  "name": "vueandwebpack",
+  "description": "a Vue.js and webpack project",
+  "author": "mythshuazi",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --host 0.0.0.0 --open --inline --hot",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "dependencies": {
+    "vue": "^2.1.8",
+    "vue-resource": "^1.0.3",
+    "zepto": "^1.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.0.0",
+    "babel-loader": "^6.0.0",
+    "babel-preset-es2015": "^6.0.0",
+    "cross-env": "^3.0.0",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "file-loader": "^0.9.0",
+    "glob": "^7.1.1",
+    "html-webpack-plugin": "^2.24.1",
+    "node-sass": "^4.1.1",
+    "resolve-url-loader": "^1.6.1",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "vue-loader": "^9.7.0",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.0"
+  }
+}
